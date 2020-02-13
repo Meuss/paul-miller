@@ -152,13 +152,13 @@ body {
       background-size: contain;
       background-position: center center;
       &.email {
-        background-image: url('/icons/email.svg');
+        background-image: url('email.svg');
       }
       &.github {
-        background-image: url('/icons/github-icon.svg');
+        background-image: url('github-icon.svg');
       }
       &.linkedin {
-        background-image: url('/icons/linkedin.svg');
+        background-image: url('linkedin.svg');
       }
     }
   }
@@ -209,7 +209,7 @@ body {
     height: 25px;
     display: flex;
     align-items: center;
-    background-image: url('/icons/github-icon.svg');
+    background-image: url('github-icon.svg');
     background-size: contain;
     background-repeat: no-repeat;
     color: $blue;

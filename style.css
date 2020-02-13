@@ -141,11 +141,11 @@ body {
       background-size: contain;
       background-position: center center; }
       .profile .icons a.email {
-        background-image: url("/icons/email.svg"); }
+        background-image: url("email.svg"); }
       .profile .icons a.github {
-        background-image: url("/icons/github-icon.svg"); }
+        background-image: url("github-icon.svg"); }
       .profile .icons a.linkedin {
-        background-image: url("/icons/linkedin.svg"); }
+        background-image: url("linkedin.svg"); }
   @media (max-width: 515px) {
     .profile {
       flex-wrap: wrap;
@@ -181,7 +181,7 @@ body {
     height: 25px;
     display: flex;
     align-items: center;
-    background-image: url("/icons/github-icon.svg");
+    background-image: url("github-icon.svg");
     background-size: contain;
     background-repeat: no-repeat;
     color: #14213d;
