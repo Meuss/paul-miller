@@ -126,8 +126,7 @@ body {
 // =====================================================
 .profile {
   display: flex;
-  border-bottom: 2px solid $orange;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   user-select: none;
   img {
     width: 110px;
@@ -187,7 +186,34 @@ body {
     }
   }
 }
-
+// =====================================================
+// CV
+// =====================================================
+.cvs {
+  border-bottom: 2px solid $orange;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    margin-left: 20px;
+    padding-left: 20px;
+    background-image: url('download.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: $blue;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $orange;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 515px) {
+    justify-content: center;
+  }
+}
 // =====================================================
 // Projects
 // =====================================================
@@ -214,8 +240,9 @@ body {
     background-repeat: no-repeat;
     color: $blue;
     font-weight: bold;
+    transition: color 0.2s ease;
     &:hover {
-      text-decoration: none;
+      color: $orange;
     }
   }
 }

@@ -114,8 +114,7 @@ body {
 
 .profile {
   display: flex;
-  border-bottom: 2px solid #fca311;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none; }
@@ -166,6 +165,28 @@ body {
         .profile .icons a {
           margin-right: 10px; } }
 
+.cvs {
+  border-bottom: 2px solid #fca311;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end; }
+  .cvs a {
+    margin-left: 20px;
+    padding-left: 20px;
+    background-image: url("download.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #14213d;
+    font-weight: bold;
+    transition: color 0.2s ease; }
+    .cvs a:hover {
+      color: #fca311; }
+    .cvs a:first-of-type {
+      margin-left: 0; }
+  @media (max-width: 515px) {
+    .cvs {
+      justify-content: center; } }
+
 .project {
   border-bottom: 2px solid #fca311;
   padding: 10px 0 40px 0; }
@@ -185,9 +206,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     color: #14213d;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: color 0.2s ease; }
     .project a:hover {
-      text-decoration: none; }
+      color: #fca311; }
 
 footer {
   text-align: right; }
