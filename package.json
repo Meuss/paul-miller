@@ -1,0 +1,18 @@
+{
+  "name": "paul-miller",
+  "version": "1.0.0",
+  "description": "Bachelor of Computer Science",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp watch"
+  },
+  "author": "Paul Miller",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {}
+}

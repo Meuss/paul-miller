@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis|Indie+Flower">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <title>Paul Miller</title>
+  <meta name="description" content="Bachelor of Computer Science - Data Science">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:url" content="http://paul-miller.ch/index.html">
+  <meta name="google-site-verification" content="Pq5xrp5HX8VFNQrNld_H_F8RiUS4Tjpqds8AZkTEi1Y">
+  <meta name="og:locale" content="en">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="Paul Miller">
+  <meta name="og:description" content="Bachelor of Computer Science - Data Science">
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+  <div id="particles-js"></div>
+  <div class="wrapper">
+    <div class="profile">
+      <img src="/profil.jpeg" alt="Paul Miller Profile" />
+      <div class="infos">
+        <h1>Paul Miller</h1>
+        <h3>Bachelor of Computer Science</h3>
+      </div>
+      <div class="icons">
+        <a href="mailto:miller_p@hotmail.fr" class="email"></a>
+        <a href="https://github.com/paulbmiller" target="_blank" class="github"></a>
+        <a href="https://www.linkedin.com/in/paul-miller-aa7951183/" target="_blank" class="linkedin"></a>
+      </div>
+    </div>
+    <main>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>MNIST GAN</h3>
+        <p class="tech">Python, PyTorch</p>
+        <p class="explanation">A Deep Convolutional Generative Adversarial Network which generates MNIST images to train a discriminator.</p>
+        <a href="https://github.com/paulbmiller/DC_GAN">DC_GAN</a>
+      </div>
+      <div class="project">
+        <h3>Aggregation of Dropout Subnetworks</h3>
+        <p class="tech">Python, PyTorch, DeepDIVA, LaTeX, numpy, pandas</p>
+        <p class="explanation">My Bachelor's project consisted on working on the Dropout method used to reduce overfitting in artifical neural networks. Specifically, I tried to find a better way to aggregate the subnetworks that the Dropout technique creates by applying it at test time and comparing the accuracy between different aggregation techniques.</p>
+        <a href="https://github.com/paulbmiller/bachelor">bachelor</a>
+        <a href="https://github.com/paulbmiller/DD_dropout">DD_dropout</a>
+      </div>
+      <div class="project">
+        <h3>WikiScrape</h3>
+        <p class="tech">Python, pandas</p>
+        <p class="explanation">A small module to scrape Wikipedia tables and output Pandas dataframes.</p>
+        <a href="https://github.com/paulbmiller/wikiscrape">wikiscrape</a>
+      </div>
+      <div class="project">
+        <h3>Snake</h3>
+        <p class="tech">Python, PyTorch</p>
+        <p class="explanation">Create a snake to train itself through Deep Reinforcement Learning.</p>
+        <a href="https://github.com/paulbmiller/Snake">Snake</a>
+      </div>
+    </main>
+    <footer>
+      <p>© <script>document.write(new Date().getFullYear())</script> Paul Miller</p>
+    </footer>
+  </div>
+  <script src="particles.js"></script>
+  <script>
+    if (!("ontouchstart" in window || navigator.msMaxTouchPoints)) {
+      particlesJS.load('particles-js', 'particles.json', function () {
+        // not a touch device, particles loaded
+      });
+    }
+  </script>
+</body>
+
+</html>

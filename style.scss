@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap');
+// =====================================================
+// Css reset
+// =====================================================
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+strong,
+b,
+ol,
+ul,
+li,
+canvas,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer,
+header,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+html {
+  font-family: serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  line-height: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 3.7rem;
+  font-weight: bold;
+  margin-top: 0;
+  @media (max-width: 515px) {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+}
+h2 {
+  font-size: 2.228rem;
+  line-height: 3rem;
+  font-weight: bold;
+  user-select: none;
+}
+h3 {
+  font-size: 1.514rem;
+  line-height: 2rem;
+}
+$black: #000;
+$blue: #14213d;
+$orange: #fca311;
+$gray: #e5e5e5;
+$white: #fff;
+// =====================================================
+// General layout
+// =====================================================
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $gray;
+  color: $blue;
+}
+::selection {
+  background: $orange;
+}
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  @media (max-width: 450px) {
+    padding: 20px;
+  }
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+// =====================================================
+// Profile section
+// =====================================================
+.profile {
+  display: flex;
+  border-bottom: 2px solid $orange;
+  padding-bottom: 50px;
+  user-select: none;
+  img {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    margin-right: 20px;
+    user-select: none;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  .infos {
+    flex: 1;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-position: center center;
+      &.email {
+        background-image: url('/icons/email.svg');
+      }
+      &.github {
+        background-image: url('/icons/github-icon.svg');
+      }
+      &.linkedin {
+        background-image: url('/icons/linkedin.svg');
+      }
+    }
+  }
+  // quick mobile fixes
+  @media (max-width: 515px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+      font-size: 1.3rem;
+    }
+    img {
+      order: 1;
+      width: 80px;
+      height: 80px;
+      margin: 10px auto;
+    }
+    .icons {
+      order: 2;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+// =====================================================
+// Projects
+// =====================================================
+.project {
+  border-bottom: 2px solid $orange;
+  padding: 10px 0 40px 0;
+  h3 {
+    font-weight: bold;
+  }
+  .tech {
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  .explanation {
+    margin-bottom: 1rem;
+  }
+  a {
+    padding-left: 35px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-image: url('/icons/github-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: $blue;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+// =====================================================
+// Footer
+// =====================================================
+footer {
+  text-align: right;
+}
