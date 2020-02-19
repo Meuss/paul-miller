@@ -231,19 +231,23 @@ body {
     margin-bottom: 1rem;
   }
   a {
-    padding-left: 35px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    background-image: url('github-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
     color: $blue;
     font-weight: bold;
     transition: color 0.2s ease;
     &:hover {
       color: $orange;
     }
+  }
+  // github links only
+  > a {
+    padding-left: 35px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url('github-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 // =====================================================
